@@ -1,9 +1,9 @@
 import React from 'react';
 import './CTAButton.css';
 
-const CTAButton = ({ text, onClick }) => {
+const CTAButton = ({ text, quandoClicar }) => {
     return (
-        <button className="cta-button" onClick={onClick}>
+        <button className="cta-button" onClick={quandoClicar}>
             {text}
         </button>
     );
