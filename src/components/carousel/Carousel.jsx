@@ -2,7 +2,7 @@ import './Carousel.css';
 import { ArrowLeft, ArrowRight } from "akar-icons";
 import { useRef } from 'react';
 
-const Carousel = ({ title }) => {
+const Carousel = ({ title, items, RenderComponent }) => {
     const carouselRef = useRef(null);
 
     const scrollLeft = () => {
@@ -39,11 +39,9 @@ const Carousel = ({ title }) => {
             </div>
 
             <div className='cards-container' ref={carouselRef}>
-                <div className='card'></div>
-                <div className='card'></div>
-                <div className='card'></div>
-                <div className='card'></div>
-                <div className='card'></div>
+                {items.map((item, index) => (
+                    <RenderComponent key={index} item={item} />
+                ))}
             </div>
         </section>
     );

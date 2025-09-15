@@ -1,0 +1,36 @@
+.animal-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 4.5rem;
+}
+
+.animal-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+    background-color: #333;
+}
+
+.animal-image-wrapper:hover {
+    background: linear-gradient(#F87537, #FBA81F);
+}
+
+.animal-image {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.animal-name {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}

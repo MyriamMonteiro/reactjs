@@ -1,6 +1,6 @@
 .category-card {
     border-radius: 12px;
-    width: 280px;
+    min-width: 280px;
     height: 350px;
     margin: 10px;
 }
@@ -13,7 +13,29 @@
 }
 
 .category-image {
-    height: 90%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #dddddd;
+    border-radius: 0 0 20px 20px;
+}
+
+.arrow-icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FD7E14;
 }
